@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO & AdSense -->
-  <title>Calculadoras de salud, nutrición y entrenamiento | FormaCalc</title>
-  <meta name="description" content="Calculadoras gratuitas de IMC, calorías, proteína, gasto calórico, 1RM, grasa corporal y déficit calórico.">
+  <title>Calculadora de IMC, Grasa Corporal, Proteína Diaria y Calorías | FormaCalc</title>
+  <meta name="description" content="Calculadora de índice de masa corporal (IMC), porcentaje de grasa corporal, cuánta proteína debo consumir al día, calorías diarias y déficit calórico gratis.">
+  <meta name="keywords" content="calculadora, calculadora de indice de masa corporal, calculadora de grasa corporal, cuanta proteina debo consumir al dia, calculadora de calorias, deficit calorico">
   <meta name="google-adsense-account" content="ca-pub-8948253291671132">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8948253291671132" crossorigin="anonymous"></script>
 
@@ -19,7 +20,10 @@
     *,*::before,*::after{box-sizing:border-box;}
     body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;font-size:16px;line-height:1.55;}
     h1,h2,h3{font-family:Georgia,serif;color:var(--ink);margin:0 0 .4em;}
+    h3{font-size:1.15rem;margin-top:1.2em;}
     p{margin:0 0 1em;color:var(--ink-soft);}
+    ul{margin:0 0 1em 1.2em;color:var(--ink-soft);padding:0;}
+    li{margin-bottom:0.4em;}
     .wrap{max-width:960px;margin:0 auto;padding:28px 20px 60px;}
     .top{margin-bottom:22px;}
     .top h1{font-size:1.7rem;}
@@ -53,6 +57,7 @@
     table.rt{width:100%;border-collapse:collapse;margin-top:10px;font-size:.87rem;}
     table.rt td{padding:5px 0;border-bottom:1px dashed var(--line);}
     table.rt td:last-child{text-align:right;font-weight:700;color:var(--primary-dark);}
+    .seo-text{margin-top:30px;border-top:1px solid var(--line);padding-top:20px;font-size:0.92rem;}
     .note{font-size:.78rem;color:var(--ink-faint);background:var(--surface-2);border-radius:8px;padding:12px 14px;margin-top:26px;}
     @media(max-width:600px){.two-col{grid-template-columns:1fr;}}
   </style>
@@ -60,7 +65,7 @@
 <body>
 <div class="wrap">
   <div class="top">
-    <h1>FormaCalc — Calculadoras de Fitness</h1>
+    <h1>FormaCalc — Calculadoras de Fitness y Salud</h1>
     <p>Elige una calculadora, introduce tus datos y pulsa calcular. Cifras útiles sin registros ni jerga innecesaria.</p>
   </div>
 
@@ -68,14 +73,28 @@
 
   <!-- IMC -->
   <div class="panel" data-p="imc">
-    <h2>Calculadora de IMC</h2>
+    <h2>Calculadora de Índice de Masa Corporal (IMC)</h2>
     <div class="field"><label>Peso (kg)</label><input type="number" id="peso" placeholder="Ej. 70" step="0.1"></div>
     <div class="field"><label>Altura (cm)</label><input type="number" id="altura" placeholder="Ej. 175" step="0.1"></div>
     <button class="btn" onclick="calcularIMC()">Calcular IMC</button>
     <div class="result" id="res">
-      <div class="label">Tu IMC</div>
+      <div class="label">Tu Índice de Masa Corporal (IMC)</div>
       <div class="big" id="valorImc">--</div>
       <div class="sub" id="categoria">--</div>
+    </div>
+
+    <div class="seo-text">
+      <h3>¿Qué es el Índice de Masa Corporal (IMC)?</h3>
+      <p>El <strong>Índice de Masa Corporal (IMC)</strong> es una calculadora que permite evaluar si una persona se encuentra en un peso saludable en proporción a su estatura, según los rangos establecidos por la OMS.</p>
+      <h3>Cómo interpretar la Calculadora de IMC</h3>
+      <ul>
+        <li><strong>Bajo peso:</strong> IMC inferior a 18.5</li>
+        <li><strong>Normopeso:</strong> IMC entre 18.5 y 24.9</li>
+        <li><strong>Sobrepeso:</strong> IMC entre 25.0 y 29.9</li>
+        <li><strong>Obesidad:</strong> IMC superior a 30.0</li>
+      </ul>
+      <h3>Limitaciones de la calculadora</h3>
+      <p>El IMC no diferencia entre masa muscular y masa grasa, por lo que deportistas con mucha masa muscular pueden dar valores de sobrepeso sin tener exceso de grasa corporal.</p>
     </div>
   </div>
 
@@ -109,11 +128,16 @@
         <tr><td>Ganar peso</td><td id="ganar">--</td></tr>
       </table>
     </div>
+
+    <div class="seo-text">
+      <h3>¿Cómo calcular las calorías diarias necesarias?</h3>
+      <p>Nuestra <strong>calculadora de calorías</strong> utiliza la fórmula de Mifflin-St Jeor para determinar tus necesidades energéticas en función de tu peso, altura, edad y nivel de actividad.</p>
+    </div>
   </div>
 
   <!-- Proteina -->
   <div class="panel" data-p="proteina">
-    <h2>Calculadora de proteína</h2>
+    <h2>Calculadora de proteína diaria: ¿Cuánta proteína debo consumir al día?</h2>
     <div class="field"><label>Peso (kg)</label><input type="number" id="pesoP" placeholder="Ej. 70"></div>
     <div class="field"><label>Objetivo</label>
       <select id="objetivoP">
@@ -129,11 +153,21 @@
       <div class="big" id="valorProteina">--</div>
       <div class="sub" id="rangoProteina">--</div>
     </div>
+
+    <div class="seo-text">
+      <h3>¿Cuánta proteína debo consumir al día según mi objetivo?</h3>
+      <p>Si te preguntas <strong>cuánta proteína debo consumir al día</strong>, la respuesta depende de tu peso y nivel de actividad física:</p>
+      <ul>
+        <li><strong>Personas sedentarias:</strong> Unos 0.8 gramos por kilo de peso al día.</li>
+        <li><strong>Deportistas de fuerza o hipertrofia:</strong> Entre 1.6 y 2.2 gramos de proteína por kilo.</li>
+        <li><strong>En etapa de pérdida de grasa:</strong> Hasta 2.2 g/kg para no perder masa muscular durante el déficit.</li>
+      </ul>
+    </div>
   </div>
 
   <!-- TDEE -->
   <div class="panel" data-p="tdee">
-    <h2>Gasto calórico (TDEE)</h2>
+    <h2>Calculadora de gasto calórico diario (TDEE)</h2>
     <div class="field"><label>Sexo</label>
       <div class="seg" id="sexoT"><button type="button" class="active" data-v="h">Hombre</button><button type="button" data-v="m">Mujer</button></div>
     </div>
@@ -154,11 +188,16 @@
         <tr><td>Muy alto</td><td id="a5">--</td></tr>
       </table>
     </div>
+
+    <div class="seo-text">
+      <h3>Calculadora de gasto calórico estimado</h3>
+      <p>Conoce exactamente cuántas calorías quema tu cuerpo cada día contando tu metabolismo basal y el movimiento diario.</p>
+    </div>
   </div>
 
   <!-- 1RM -->
   <div class="panel" data-p="1rm">
-    <h2>Calculadora de 1RM</h2>
+    <h2>Calculadora de 1RM (Repetición Máxima)</h2>
     <div class="two-col">
       <div class="field"><label>Peso levantado (kg)</label><input type="number" id="pesoLevantado" placeholder="Ej. 80"></div>
       <div class="field"><label>Repeticiones</label><input type="number" id="reps" placeholder="Ej. 5"></div>
@@ -176,11 +215,16 @@
         <tr><td>60%</td><td id="p60">--</td></tr>
       </table>
     </div>
+
+    <div class="seo-text">
+      <h3>Calculadora de peso máximo (1RM)</h3>
+      <p>Estima tu peso máximo a 1 repetición mediante la fórmula de Epley para ajustar tus cargas de entrenamiento de fuerza.</p>
+    </div>
   </div>
 
   <!-- Grasa -->
   <div class="panel" data-p="grasa">
-    <h2>Porcentaje de grasa corporal</h2>
+    <h2>Calculadora de grasa corporal</h2>
     <div class="field"><label>Sexo</label>
       <div class="seg" id="sexoG"><button type="button" class="active" data-v="h">Hombre</button><button type="button" data-v="m">Mujer</button></div>
     </div>
@@ -196,11 +240,16 @@
       <div class="big" id="valorGrasa">--</div>
       <div class="sub" id="categoriaGrasa">--</div>
     </div>
+
+    <div class="seo-text">
+      <h3>¿Cómo funciona la calculadora de grasa corporal?</h3>
+      <p>Nuestra <strong>calculadora de porcentaje de grasa corporal</strong> utiliza el método oficial de la Marina de los EE. UU. midiendo tus perímetros de cuello, cintura y cadera.</p>
+    </div>
   </div>
 
   <!-- Deficit -->
   <div class="panel" data-p="deficit">
-    <h2>Déficit calórico</h2>
+    <h2>Calculadora de déficit calórico</h2>
     <div class="field"><label>Tu gasto calórico diario (TDEE)</label><input type="number" id="tdeeD" placeholder="Ej. 2400">
       <div class="hint">Calcúlalo antes en la pestaña "Gasto calórico".</div>
     </div>
@@ -218,11 +267,16 @@
       <div class="big" id="caloriasObjetivo">--</div>
       <div class="sub" id="detalleDeficit">--</div>
     </div>
+
+    <div class="seo-text">
+      <h3>Calculadora de calorías para perder peso</h3>
+      <p>Ajusta tu ingesta calórica diaria mediante un déficit saludable para perder grasa sin poner en riesgo tu masa muscular.</p>
+    </div>
   </div>
 
   <!-- Rutinas -->
   <div class="panel" data-p="rutinas">
-    <h2>Generador de rutinas</h2>
+    <h2>Generador de rutinas de entrenamiento</h2>
     <div class="field"><label>Días de entrenamiento por semana</label>
       <select id="dias">
         <option value="3">3 días</option>
@@ -254,7 +308,7 @@
 
   <!-- Plan comidas -->
   <div class="panel" data-p="plan">
-    <h2>Planificador de comidas</h2>
+    <h2>Planificador de comidas y macronutrientes</h2>
     <div class="field"><label>Calorías diarias objetivo</label><input type="number" id="caloriasPlan" placeholder="Ej. 2200"></div>
     <div class="field"><label>Reparto de macronutrientes</label>
       <select id="reparto">
@@ -425,7 +479,7 @@ function calcularDeficit(){
   var minimo = 1200;
   if(objetivo<minimo){
     document.getElementById('caloriasObjetivo').textContent = fmt(minimo,0)+' kcal (límite mínimo orientativo)';
-    document.getElementById('detalleDeficit').textContent = 'El déficit calculated bajaría tu ingesta por debajo de un umbral prudente. Prueba un ritmo más suave.';
+    document.getElementById('detalleDeficit').textContent = 'El déficit calculado bajaría tu ingesta por debajo de un umbral prudente. Prueba un ritmo más suave.';
   } else {
     document.getElementById('caloriasObjetivo').textContent = fmt(objetivo,0)+' kcal/día';
     document.getElementById('detalleDeficit').textContent = 'Déficit diario aplicado: '+fmt(deficitDiario,0)+' kcal, para '+ritmo+' kg/semana aprox.';
