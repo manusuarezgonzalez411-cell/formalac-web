@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de IMC (Índice de Masa Corporal) | FormaCalc</title>
+<meta name="description" content="Calcula tu IMC a partir de tu peso y altura y descubre en qué rango te encuentras, con explicación de cada categoría.">
+<link rel="canonical" href="https://calculadoradegrasa.com/calculadoras/imc.html">
+<meta property="og:title" content="Calculadora de IMC (Índice de Masa Corporal) | FormaCalc">
+<meta property="og:description" content="Calcula tu IMC a partir de tu peso y altura y descubre en qué rango te encuentras, con explicación de cada categoría.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<!--
+  Google AdSense:
+  Una vez tengas tu cuenta aprobada, añade aquí tu snippet oficial, p. ej.:
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  No lo incluyas antes de tener el ID real: un client-id de ejemplo puede generar
+  errores de "código no válido" en la revisión.
+-->
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="../index.html" class="brand"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+      <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+      <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <div class="has-menu">
+          <a href="../index.html#calculadoras" class="active">Calculadoras &#9662;</a>
+          <div class="dropdown">
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+          </div>
+        </div>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="section section-tight">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#calculadoras">Calculadoras</a> &rsaquo; Calculadora de IMC</p>
+      <div class="tool-head">
+        <h1>Calculadora de IMC</h1>
+        <p class="lede">Introduce tu peso y tu altura para conocer tu índice de masa corporal al instante.</p>
+      </div>
+      <div class="tool-layout">
+        <div>
+          
+          <h2>Qué es el IMC y cómo se calcula</h2>
+          <p>El índice de masa corporal (IMC) relaciona tu peso con tu altura mediante la fórmula
+          <strong>IMC = peso (kg) / altura (m)²</strong>. Es una herramienta de cribado poblacional, rápida
+          y gratuita, que la OMS usa para clasificar rangos de peso a nivel general.</p>
+          <p>No mide directamente la grasa corporal ni distingue masa muscular de masa grasa, por lo que
+          una persona muy musculada puede obtener un IMC "alto" sin exceso de grasa. Si entrenas fuerza de
+          forma habitual, complementa este dato con la <a href="grasa-corporal.html">calculadora de grasa corporal</a>.</p>
+
+          <div class="ad-slot">Espacio reservado para anuncio (se activará tras la aprobación de AdSense)</div>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq">
+    <div class="faq-item">
+      <h4>¿El IMC es fiable para todo el mundo?</h4>
+      <p>Es una guía general para adultos. Pierde precisión en deportistas muy musculados, personas mayores, embarazadas y menores de edad, donde otros indicadores son más útiles.</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Qué significa cada categoría?</h4>
+      <p>Por debajo de 18,5: bajo peso. De 18,5 a 24,9: peso normal. De 25 a 29,9: sobrepeso. 30 o más: obesidad. Son rangos orientativos, no un diagnóstico.</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Debo preocuparme si mi IMC está fuera del rango normal?</h4>
+      <p>Un IMC fuera de rango es un motivo para hablarlo con un profesional sanitario, no para sacar conclusiones ni tomar decisiones drásticas por tu cuenta.</p>
+    </div>
+  </div>
+          <h2>Calculadoras relacionadas</h2>
+          <div class="related-strip"><a class="pill" href="calorias.html">Calculadora de calorías</a><a class="pill" href="gasto-calorico.html">Gasto calórico (TDEE)</a><a class="pill" href="grasa-corporal.html">Porcentaje de grasa corporal</a></div>
+        </div>
+        <div class="tool-panel">
+          
+          <div class="field">
+            <label for="peso">Peso (kg)</label>
+            <input type="number" id="peso" min="20" max="300" step="0.1" placeholder="Ej. 70">
+          </div>
+          <div class="field">
+            <label for="altura">Altura (cm)</label>
+            <input type="number" id="altura" min="100" max="230" step="0.1" placeholder="Ej. 175">
+          </div>
+          <button class="btn btn-accent btn-block" onclick="calcularIMC()">Calcular IMC</button>
+
+          <div class="result-box" id="res">
+            <div class="label">Tu IMC</div>
+            <div class="big" id="valorImc">--</div>
+            <div class="scale-bar"><div class="scale-marker" id="marker" style="left:0%"></div></div>
+            <div class="scale-labels"><span>16</span><span>18,5</span><span>25</span><span>30</span><span>40</span></div>
+            <div class="sub" id="categoria">--</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand" style="color:#fff"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+        <p>Calculadoras claras y artículos revisados sobre salud, nutrición y entrenamiento, para que entiendas tus números, no solo los veas.</p>
+      </div>
+      <div>
+        <h4>Calculadoras</h4>
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+      </div>
+      <div>
+        <h4>Recursos</h4>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+        <a href="../aviso-medico.html">Aviso médico</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="../privacidad.html">Política de privacidad</a>
+        <a href="../terminos.html">Términos de uso</a>
+        <a href="../cookies.html">Política de cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="y"></span> FormaCalc. Todos los derechos reservados.</span>
+      <span>Contenido con fines informativos. No sustituye el consejo médico profesional.</span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+<script src="../js/main.js"></script>
+
+<script>
+function calcularIMC(){
+  var peso = parseFloat(document.getElementById('peso').value);
+  var altura = parseFloat(document.getElementById('altura').value) / 100;
+  if(!peso || !altura){ alert('Introduce tu peso y tu altura.'); return; }
+  var imc = peso / (altura*altura);
+  document.getElementById('valorImc').textContent = fmt(imc,1);
+  var cat = '';
+  if(imc < 18.5) cat = 'Bajo peso';
+  else if(imc < 25) cat = 'Peso normal';
+  else if(imc < 30) cat = 'Sobrepeso';
+  else cat = 'Obesidad';
+  document.getElementById('categoria').textContent = 'Categoría: ' + cat + ' (según la clasificación de la OMS)';
+  var pos = Math.min(Math.max((imc - 14) / (42 - 14) * 100, 2), 98);
+  document.getElementById('marker').style.left = pos + '%';
+  document.getElementById('res').classList.add('show');
+}
+</script>
+
+</body>
+</html>

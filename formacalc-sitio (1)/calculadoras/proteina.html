@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de proteína diaria | FormaCalc</title>
+<meta name="description" content="Calcula cuántos gramos de proteína necesitas al día según tu peso y tu objetivo: mantenimiento, actividad, hipertrofia o definición.">
+<link rel="canonical" href="https://calculadoradegrasa.com/calculadoras/proteina.html">
+<meta property="og:title" content="Calculadora de proteína diaria | FormaCalc">
+<meta property="og:description" content="Calcula cuántos gramos de proteína necesitas al día según tu peso y tu objetivo: mantenimiento, actividad, hipertrofia o definición.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<!--
+  Google AdSense:
+  Una vez tengas tu cuenta aprobada, añade aquí tu snippet oficial, p. ej.:
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  No lo incluyas antes de tener el ID real: un client-id de ejemplo puede generar
+  errores de "código no válido" en la revisión.
+-->
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="../index.html" class="brand"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+      <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+      <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <div class="has-menu">
+          <a href="../index.html#calculadoras" class="active">Calculadoras &#9662;</a>
+          <div class="dropdown">
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+          </div>
+        </div>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="section section-tight">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#calculadoras">Calculadoras</a> &rsaquo; Calculadora de proteína</p>
+      <div class="tool-head">
+        <h1>Calculadora de proteína</h1>
+        <p class="lede">Estima tus gramos de proteína diarios según tu peso y tu objetivo de entrenamiento.</p>
+      </div>
+      <div class="tool-layout">
+        <div>
+          
+          <h2>Cómo se calcula tu necesidad de proteína</h2>
+          <p>La cantidad de proteína recomendada depende sobre todo de tu peso corporal y tu nivel de
+          actividad. Las guías de nutrición deportiva sitúan un rango general entre 0,8 g/kg (una persona
+          sedentaria) y 2,2 g/kg (fases de definición con entrenamiento de fuerza, para proteger la masa
+          muscular durante el déficit).</p>
+          <p>Repartir la proteína en 3-4 tomas a lo largo del día, con una ración que incluya una fuente
+          proteica en cada comida, suele ser más práctico que intentar consumirla toda de una vez.</p>
+
+          <div class="ad-slot">Espacio reservado para anuncio (se activará tras la aprobación de AdSense)</div>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq">
+    <div class="faq-item">
+      <h4>¿Es malo tomar demasiada proteína?</h4>
+      <p>Para personas sanas, consumos moderadamente altos (hasta 2-2,5 g/kg) se consideran seguros según la evidencia actual. Si tienes una enfermedad renal u otra condición, consúltalo con tu médico.</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Necesito suplementos de proteína?</h4>
+      <p>No son imprescindibles: puedes cubrir tus necesidades con alimentos. Un batido de proteína es solo una forma cómoda de llegar al total, no algo obligatorio.</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Cambia la cantidad si estoy en déficit calórico?</h4>
+      <p>Sí: en déficit conviene acercarse a la parte alta del rango (1,8-2,2 g/kg) para ayudar a preservar masa muscular mientras pierdes grasa.</p>
+    </div>
+  </div>
+          <h2>Calculadoras relacionadas</h2>
+          <div class="related-strip"><a class="pill" href="calorias.html">Calculadora de calorías</a><a class="pill" href="deficit-calorico.html">Déficit calórico</a><a class="pill" href="plan-comidas.html">Planificador de comidas</a></div>
+        </div>
+        <div class="tool-panel">
+          
+          <div class="field">
+            <label for="pesoP">Peso (kg)</label>
+            <input type="number" id="pesoP" min="30" max="300" placeholder="Ej. 70">
+          </div>
+          <div class="field">
+            <label for="objetivoP">Objetivo</label>
+            <select id="objetivoP">
+              <option value="0.8">Sedentario / mantenimiento general</option>
+              <option value="1.4">Activo / entrenamiento recreativo</option>
+              <option value="1.8" selected>Ganancia muscular (hipertrofia)</option>
+              <option value="2.2">Definición / en déficit calórico</option>
+            </select>
+          </div>
+          <button class="btn btn-accent btn-block" onclick="calcularProteina()">Calcular proteína</button>
+
+          <div class="result-box" id="res3">
+            <div class="label">Proteína diaria recomendada</div>
+            <div class="big" id="valorProteina">--</div>
+            <div class="sub" id="rangoProteina">--</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand" style="color:#fff"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+        <p>Calculadoras claras y artículos revisados sobre salud, nutrición y entrenamiento, para que entiendas tus números, no solo los veas.</p>
+      </div>
+      <div>
+        <h4>Calculadoras</h4>
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+      </div>
+      <div>
+        <h4>Recursos</h4>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+        <a href="../aviso-medico.html">Aviso médico</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="../privacidad.html">Política de privacidad</a>
+        <a href="../terminos.html">Términos de uso</a>
+        <a href="../cookies.html">Política de cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="y"></span> FormaCalc. Todos los derechos reservados.</span>
+      <span>Contenido con fines informativos. No sustituye el consejo médico profesional.</span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+<script src="../js/main.js"></script>
+
+<script>
+function calcularProteina(){
+  var peso = parseFloat(document.getElementById('pesoP').value);
+  var factor = parseFloat(document.getElementById('objetivoP').value);
+  if(!peso){ alert('Introduce tu peso.'); return; }
+  var g = peso * factor;
+  document.getElementById('valorProteina').textContent = fmt(g,0) + ' g/día';
+  document.getElementById('rangoProteina').textContent = 'Equivale a ' + fmt(factor,1) + ' g por kg de peso corporal, repartidos en 3-4 comidas.';
+  document.getElementById('res3').classList.add('show');
+}
+</script>
+
+</body>
+</html>

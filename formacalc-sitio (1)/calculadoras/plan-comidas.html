@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planificador de comidas y macronutrientes | FormaCalc</title>
+<meta name="description" content="Reparte tus calorías diarias en proteína, carbohidratos y grasas, y distribúyelas entre tus comidas del día.">
+<link rel="canonical" href="https://calculadoradegrasa.com/calculadoras/plan-comidas.html">
+<meta property="og:title" content="Planificador de comidas y macronutrientes | FormaCalc">
+<meta property="og:description" content="Reparte tus calorías diarias en proteína, carbohidratos y grasas, y distribúyelas entre tus comidas del día.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<!--
+  Google AdSense:
+  Una vez tengas tu cuenta aprobada, añade aquí tu snippet oficial, p. ej.:
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  No lo incluyas antes de tener el ID real: un client-id de ejemplo puede generar
+  errores de "código no válido" en la revisión.
+-->
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="../index.html" class="brand"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+      <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+      <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <div class="has-menu">
+          <a href="../index.html#calculadoras" class="active">Calculadoras &#9662;</a>
+          <div class="dropdown">
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+          </div>
+        </div>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="section section-tight">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#calculadoras">Calculadoras</a> &rsaquo; Planificador de comidas</p>
+      <div class="tool-head">
+        <h1>Planificador de comidas</h1>
+        <p class="lede">Convierte tus calorías objetivo en gramos de macronutrientes repartidos por comida.</p>
+      </div>
+      <div class="tool-layout">
+        <div>
+          
+          <h2>Cómo se reparte tu plan de comidas</h2>
+          <p>A partir de tus calorías diarias objetivo y el reparto de macronutrientes que elijas, esta
+          calculadora traduce los porcentajes en gramos de proteína, carbohidratos y grasas, y los divide
+          a partes iguales entre el número de comidas que indiques.</p>
+          <p>Es una plantilla orientativa: en la práctica puedes concentrar más carbohidratos alrededor del
+          entrenamiento y repartir la proteína de forma más uniforme, que es lo que suele maximizar la
+          síntesis de proteína muscular a lo largo del día.</p>
+
+          <div class="ad-slot">Espacio reservado para anuncio (se activará tras la aprobación de AdSense)</div>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq">
+    <div class="faq-item">
+      <h4>¿Por qué proteína, carbohidratos y grasas y no solo calorías?</h4>
+      <p>El total de calorías determina si ganas, mantienes o pierdes peso, pero el reparto de macronutrientes influye en la saciedad, el rendimiento en el entrenamiento y la composición corporal.</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Qué reparto me conviene?</h4>
+      <p>Depende de tus preferencias y tu objetivo. Un reparto equilibrado o alto en proteína funciona bien para la mayoría de objetivos de composición corporal; los bajos en carbohidratos pueden convenir en casos concretos, idealmente con supervisión.</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Tengo que repartir las comidas exactamente igual?</h4>
+      <p>No es obligatorio. Repartir a partes iguales es un punto de partida simple; puedes ajustar según tu apetito, tus horarios o el momento del entrenamiento.</p>
+    </div>
+  </div>
+          <h2>Calculadoras relacionadas</h2>
+          <div class="related-strip"><a class="pill" href="calorias.html">Calculadora de calorías</a><a class="pill" href="proteina.html">Calculadora de proteína</a><a class="pill" href="deficit-calorico.html">Déficit calórico</a></div>
+        </div>
+        <div class="tool-panel">
+          
+          <div class="field">
+            <label for="caloriasPlan">Calorías diarias objetivo</label>
+            <input type="number" id="caloriasPlan" min="1000" max="6000" placeholder="Ej. 2200">
+            <div class="hint">Usa el resultado de tu <a href="calorias.html">calculadora de calorías</a> o <a href="deficit-calorico.html">déficit calórico</a>.</div>
+          </div>
+          <div class="field">
+            <label for="reparto">Reparto de macronutrientes</label>
+            <select id="reparto">
+              <option value="30-40-30">Equilibrado — 30% proteína / 40% carbos / 30% grasas</option>
+              <option value="40-30-30">Alto en proteína — 40% proteína / 30% carbos / 30% grasas</option>
+              <option value="25-50-25">Alto en carbohidratos — 25% proteína / 50% carbos / 25% grasas</option>
+              <option value="30-20-50">Bajo en carbohidratos — 30% proteína / 20% carbos / 50% grasas</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="numComidas">Número de comidas al día</label>
+            <select id="numComidas">
+              <option value="3">3 comidas</option>
+              <option value="4" selected>4 comidas</option>
+              <option value="5">5 comidas</option>
+            </select>
+          </div>
+          <button class="btn btn-accent btn-block" onclick="calcularPlan()">Generar plan</button>
+
+          <div class="result-box" id="resP">
+            <div class="label">Macros diarios totales</div>
+            <table class="result-table">
+              <tr><td>Proteína</td><td id="protTotal">--</td></tr>
+              <tr><td>Carbohidratos</td><td id="carbTotal">--</td></tr>
+              <tr><td>Grasas</td><td id="grasaTotal">--</td></tr>
+            </table>
+            <div class="label" style="margin-top:16px;">Por comida (aprox.)</div>
+            <div id="salidaComidas"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand" style="color:#fff"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+        <p>Calculadoras claras y artículos revisados sobre salud, nutrición y entrenamiento, para que entiendas tus números, no solo los veas.</p>
+      </div>
+      <div>
+        <h4>Calculadoras</h4>
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+      </div>
+      <div>
+        <h4>Recursos</h4>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+        <a href="../aviso-medico.html">Aviso médico</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="../privacidad.html">Política de privacidad</a>
+        <a href="../terminos.html">Términos de uso</a>
+        <a href="../cookies.html">Política de cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="y"></span> FormaCalc. Todos los derechos reservados.</span>
+      <span>Contenido con fines informativos. No sustituye el consejo médico profesional.</span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+<script src="../js/main.js"></script>
+
+<script>
+function calcularPlan(){
+  var kcal = parseFloat(document.getElementById('caloriasPlan').value);
+  var reparto = document.getElementById('reparto').value.split('-').map(Number);
+  var numComidas = parseInt(document.getElementById('numComidas').value);
+  if(!kcal){ alert('Introduce tus calorías diarias objetivo.'); return; }
+
+  var kcalProt = kcal * (reparto[0]/100);
+  var kcalCarb = kcal * (reparto[1]/100);
+  var kcalGrasa = kcal * (reparto[2]/100);
+
+  var gProt = kcalProt / 4;
+  var gCarb = kcalCarb / 4;
+  var gGrasa = kcalGrasa / 9;
+
+  document.getElementById('protTotal').textContent = fmt(gProt,0) + ' g';
+  document.getElementById('carbTotal').textContent = fmt(gCarb,0) + ' g';
+  document.getElementById('grasaTotal').textContent = fmt(gGrasa,0) + ' g';
+
+  var out = '<table class="result-table">';
+  var etiquetas4 = ['Desayuno','Comida','Merienda','Cena','Extra'];
+  for(var i=0;i<numComidas;i++){
+    out += '<tr><td>' + etiquetas4[i] + '</td><td>' + fmt(kcal/numComidas,0) + ' kcal &middot; P ' + fmt(gProt/numComidas,0) + 'g &middot; C ' + fmt(gCarb/numComidas,0) + 'g &middot; G ' + fmt(gGrasa/numComidas,0) + 'g</td></tr>';
+  }
+  out += '</table>';
+  document.getElementById('salidaComidas').innerHTML = out;
+  document.getElementById('resP').classList.add('show');
+}
+</script>
+
+</body>
+</html>

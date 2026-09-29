@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de 1RM (repetición máxima) | FormaCalc</title>
+<meta name="description" content="Estima tu repetición máxima (1RM) a partir del peso y las repeticiones que levantaste, y obtén tu tabla de porcentajes de carga.">
+<link rel="canonical" href="https://calculadoradegrasa.com/calculadoras/1rm.html">
+<meta property="og:title" content="Calculadora de 1RM (repetición máxima) | FormaCalc">
+<meta property="og:description" content="Estima tu repetición máxima (1RM) a partir del peso y las repeticiones que levantaste, y obtén tu tabla de porcentajes de carga.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<!--
+  Google AdSense:
+  Una vez tengas tu cuenta aprobada, añade aquí tu snippet oficial, p. ej.:
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  No lo incluyas antes de tener el ID real: un client-id de ejemplo puede generar
+  errores de "código no válido" en la revisión.
+-->
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="../index.html" class="brand"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+      <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+      <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <div class="has-menu">
+          <a href="../index.html#calculadoras" class="active">Calculadoras &#9662;</a>
+          <div class="dropdown">
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+          </div>
+        </div>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="section section-tight">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#calculadoras">Calculadoras</a> &rsaquo; Calculadora de 1RM</p>
+      <div class="tool-head">
+        <h1>Calculadora de 1RM</h1>
+        <p class="lede">Estima tu repetición máxima y tu tabla de porcentajes de carga para programar tus series.</p>
+      </div>
+      <div class="tool-layout">
+        <div>
+          
+          <h2>Qué es el 1RM y para qué sirve</h2>
+          <p>El 1RM (una repetición máxima) es el peso máximo que puedes levantar una sola vez con buena
+          técnica en un ejercicio concreto. En vez de arriesgarte a probarlo directamente, puedes estimarlo
+          a partir de un peso submáximo y el número de repeticiones que hiciste, con la fórmula de Epley:
+          <strong>1RM = peso x (1 + repeticiones / 30)</strong>.</p>
+          <p>Conocer tu 1RM estimado te permite programar tus series con porcentajes de carga (por ejemplo,
+          trabajar hipertrofia al 70-80% o fuerza máxima al 85-95%) en lugar de elegir el peso al azar.</p>
+
+          <div class="ad-slot">Espacio reservado para anuncio (se activará tras la aprobación de AdSense)</div>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq">
+    <div class="faq-item">
+      <h4>¿Es fiable la fórmula de Epley?</h4>
+      <p>Funciona mejor con series de entre 1 y 10 repeticiones. Por encima de 12-15 repeticiones la estimación pierde precisión y conviene tomarla solo como orientativa.</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Debo probar mi 1RM real de vez en cuando?</h4>
+      <p>No es necesario para la mayoría de personas. Un test máximo requiere buena técnica, calentamiento adecuado y, idealmente, supervisión; muchos atletas se apoyan solo en estimaciones.</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Sirve igual para cualquier ejercicio?</h4>
+      <p>Es más precisa en ejercicios básicos como sentadilla, press banca o peso muerto que en movimientos que dependen mucho de la técnica o el equilibrio.</p>
+    </div>
+  </div>
+          <h2>Calculadoras relacionadas</h2>
+          <div class="related-strip"><a class="pill" href="gasto-calorico.html">Gasto calórico (TDEE)</a><a class="pill" href="rutinas.html">Generador de rutinas</a></div>
+        </div>
+        <div class="tool-panel">
+          
+          <div class="two-col">
+            <div class="field">
+              <label for="pesoLevantado">Peso levantado (kg)</label>
+              <input type="number" id="pesoLevantado" min="1" max="500" placeholder="Ej. 80">
+            </div>
+            <div class="field">
+              <label for="reps">Repeticiones</label>
+              <input type="number" id="reps" min="1" max="15" placeholder="Ej. 5">
+            </div>
+          </div>
+          <button class="btn btn-accent btn-block" onclick="calcular1RM()">Calcular 1RM</button>
+
+          <div class="result-box" id="resRM">
+            <div class="label">Tu 1RM estimado</div>
+            <div class="big" id="valorRM">--</div>
+            <table class="result-table">
+              <tr><td>95% — series de 2-3 reps</td><td id="p95">--</td></tr>
+              <tr><td>90% — series de 3-4 reps</td><td id="p90">--</td></tr>
+              <tr><td>85% — series de 5-6 reps</td><td id="p85">--</td></tr>
+              <tr><td>80% — series de 6-8 reps</td><td id="p80">--</td></tr>
+              <tr><td>70% — series de 10-12 reps</td><td id="p70">--</td></tr>
+              <tr><td>60% — series de 15+ reps</td><td id="p60">--</td></tr>
+            </table>
+            <div class="sub">Calculado con la fórmula de Epley. Es una estimación, no un valor exacto.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand" style="color:#fff"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+        <p>Calculadoras claras y artículos revisados sobre salud, nutrición y entrenamiento, para que entiendas tus números, no solo los veas.</p>
+      </div>
+      <div>
+        <h4>Calculadoras</h4>
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+      </div>
+      <div>
+        <h4>Recursos</h4>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+        <a href="../aviso-medico.html">Aviso médico</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="../privacidad.html">Política de privacidad</a>
+        <a href="../terminos.html">Términos de uso</a>
+        <a href="../cookies.html">Política de cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="y"></span> FormaCalc. Todos los derechos reservados.</span>
+      <span>Contenido con fines informativos. No sustituye el consejo médico profesional.</span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+<script src="../js/main.js"></script>
+
+<script>
+function calcular1RM(){
+  var peso = parseFloat(document.getElementById('pesoLevantado').value);
+  var reps = parseFloat(document.getElementById('reps').value);
+  if(!peso || !reps){ alert('Introduce el peso y las repeticiones.'); return; }
+  var rm = peso * (1 + reps/30);
+  document.getElementById('valorRM').textContent = fmt(rm,1) + ' kg';
+  var pcts = [0.95,0.90,0.85,0.80,0.70,0.60];
+  var ids = ['p95','p90','p85','p80','p70','p60'];
+  for(var i=0;i<pcts.length;i++){
+    document.getElementById(ids[i]).textContent = fmt(rm*pcts[i],1) + ' kg';
+  }
+  document.getElementById('resRM').classList.add('show');
+}
+</script>
+
+</body>
+</html>

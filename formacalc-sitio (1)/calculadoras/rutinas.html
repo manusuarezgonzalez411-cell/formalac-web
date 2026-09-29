@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generador de rutinas de entrenamiento | FormaCalc</title>
+<meta name="description" content="Genera una estructura de rutina semanal de entrenamiento según tus días disponibles, tu objetivo y tu nivel de experiencia.">
+<link rel="canonical" href="https://calculadoradegrasa.com/calculadoras/rutinas.html">
+<meta property="og:title" content="Generador de rutinas de entrenamiento | FormaCalc">
+<meta property="og:description" content="Genera una estructura de rutina semanal de entrenamiento según tus días disponibles, tu objetivo y tu nivel de experiencia.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<!--
+  Google AdSense:
+  Una vez tengas tu cuenta aprobada, añade aquí tu snippet oficial, p. ej.:
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  No lo incluyas antes de tener el ID real: un client-id de ejemplo puede generar
+  errores de "código no válido" en la revisión.
+-->
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="../index.html" class="brand"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+      <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+      <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <div class="has-menu">
+          <a href="../index.html#calculadoras" class="active">Calculadoras &#9662;</a>
+          <div class="dropdown">
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+          </div>
+        </div>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="section section-tight">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#calculadoras">Calculadoras</a> &rsaquo; Generador de rutinas</p>
+      <div class="tool-head">
+        <h1>Generador de rutinas</h1>
+        <p class="lede">Obtén un esquema de entrenamiento semanal según tus días, tu objetivo y tu nivel.</p>
+      </div>
+      <div class="tool-layout">
+        <div>
+          
+          <h2>Cómo se genera tu rutina</h2>
+          <p>Esta herramienta sugiere una <strong>estructura</strong> de entrenamiento semanal (qué grupos
+          musculares trabajar cada día y con qué rango de repeticiones) según tus días disponibles, tu
+          objetivo y tu experiencia. No sustituye una programación individualizada con ejercicios concretos,
+          cargas y progresión, que idealmente debería diseñar un entrenador cualificado según tu historial y
+          tus posibles lesiones.</p>
+
+          <div class="ad-slot">Espacio reservado para anuncio (se activará tras la aprobación de AdSense)</div>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq">
+    <div class="faq-item">
+      <h4>¿Qué ejercicios debo elegir para cada día?</h4>
+      <p>Prioriza ejercicios multiarticulares (sentadilla, press, remo, peso muerto, dominadas) y completa con ejercicios de aislamiento según tus prioridades estéticas o puntos débiles.</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Cuántas series y repeticiones por ejercicio?</h4>
+      <p>En general: fuerza, 3-5 series de 3-6 reps; hipertrofia, 3-4 series de 8-12 reps; resistencia, 2-3 series de 15 o más reps. Usa la calculadora de 1RM para fijar el peso adecuado.</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Puedo cambiar los días de la semana?</h4>
+      <p>Sí, el esquema es flexible. Lo importante es respetar al menos 48 horas entre sesiones que trabajen el mismo grupo muscular con volumen alto.</p>
+    </div>
+  </div>
+          <h2>Calculadoras relacionadas</h2>
+          <div class="related-strip"><a class="pill" href="1rm.html">Calculadora de 1RM</a><a class="pill" href="plan-comidas.html">Planificador de comidas</a></div>
+        </div>
+        <div class="tool-panel">
+          
+          <div class="field">
+            <label for="dias">Días de entrenamiento por semana</label>
+            <select id="dias">
+              <option value="3">3 días</option>
+              <option value="4" selected>4 días</option>
+              <option value="5">5 días</option>
+              <option value="6">6 días</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="objetivoR">Objetivo principal</label>
+            <select id="objetivoR">
+              <option value="fuerza">Fuerza</option>
+              <option value="hipertrofia" selected>Hipertrofia (ganar músculo)</option>
+              <option value="resistencia">Resistencia muscular</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="nivel">Nivel de experiencia</label>
+            <select id="nivel">
+              <option value="principiante">Principiante</option>
+              <option value="intermedio" selected>Intermedio</option>
+              <option value="avanzado">Avanzado</option>
+            </select>
+          </div>
+          <button class="btn btn-accent btn-block" onclick="generarRutina()">Generar rutina</button>
+
+          <div class="result-box" id="resR">
+            <div class="label">Tu esquema semanal sugerido</div>
+            <div id="salidaRutina" style="font-size:.92rem;color:var(--ink-soft)"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand" style="color:#fff"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+        <p>Calculadoras claras y artículos revisados sobre salud, nutrición y entrenamiento, para que entiendas tus números, no solo los veas.</p>
+      </div>
+      <div>
+        <h4>Calculadoras</h4>
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+      </div>
+      <div>
+        <h4>Recursos</h4>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+        <a href="../aviso-medico.html">Aviso médico</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="../privacidad.html">Política de privacidad</a>
+        <a href="../terminos.html">Términos de uso</a>
+        <a href="../cookies.html">Política de cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="y"></span> FormaCalc. Todos los derechos reservados.</span>
+      <span>Contenido con fines informativos. No sustituye el consejo médico profesional.</span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+<script src="../js/main.js"></script>
+
+<script>
+function generarRutina(){
+  var dias = document.getElementById('dias').value;
+  var obj = document.getElementById('objetivoR').value;
+  var nivel = document.getElementById('nivel').value;
+
+  var reps = { fuerza: '3-6 reps, descansos de 2-4 min', hipertrofia: '8-12 reps, descansos de 60-90 s', resistencia: '15+ reps, descansos de 30-45 s' }[obj];
+
+  var esquemas = {
+    '3': ['Cuerpo completo A', 'Descanso / cardio ligero', 'Cuerpo completo B', 'Descanso', 'Cuerpo completo C', 'Descanso', 'Descanso'],
+    '4': ['Tren superior A', 'Tren inferior A', 'Descanso', 'Tren superior B', 'Tren inferior B', 'Descanso', 'Descanso'],
+    '5': ['Empuje (pecho/hombro/tríceps)', 'Tirón (espalda/bíceps)', 'Piernas', 'Descanso', 'Tren superior', 'Tren inferior', 'Descanso'],
+    '6': ['Empuje', 'Tirón', 'Piernas', 'Empuje', 'Tirón', 'Piernas', 'Descanso']
+  };
+
+  var dias_lista = esquemas[dias];
+  var out = '<table class="result-table">';
+  var etiquetas = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo'];
+  for(var i=0;i<7;i++){
+    out += '<tr><td>' + etiquetas[i] + '</td><td>' + dias_lista[i] + '</td></tr>';
+  }
+  out += '</table>';
+  out += '<p style="margin-top:14px;font-size:.88rem;">Nivel <strong>' + nivel + '</strong>, objetivo <strong>' + obj + '</strong>: trabaja en el rango de ' + reps + ' en los ejercicios principales de cada sesión.</p>';
+
+  document.getElementById('salidaRutina').innerHTML = out;
+  document.getElementById('resR').classList.add('show');
+}
+</script>
+
+</body>
+</html>

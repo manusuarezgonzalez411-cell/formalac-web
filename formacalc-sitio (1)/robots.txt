@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://calculadoradegrasa.com/sitemap.xml

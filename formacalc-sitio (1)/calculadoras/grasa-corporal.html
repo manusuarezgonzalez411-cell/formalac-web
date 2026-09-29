@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de porcentaje de grasa corporal | FormaCalc</title>
+<meta name="description" content="Estima tu porcentaje de grasa corporal con el método de la Marina de EE. UU. a partir de tu altura, cuello, cintura y cadera.">
+<link rel="canonical" href="https://calculadoradegrasa.com/calculadoras/grasa-corporal.html">
+<meta property="og:title" content="Calculadora de porcentaje de grasa corporal | FormaCalc">
+<meta property="og:description" content="Estima tu porcentaje de grasa corporal con el método de la Marina de EE. UU. a partir de tu altura, cuello, cintura y cadera.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<!--
+  Google AdSense:
+  Una vez tengas tu cuenta aprobada, añade aquí tu snippet oficial, p. ej.:
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  No lo incluyas antes de tener el ID real: un client-id de ejemplo puede generar
+  errores de "código no válido" en la revisión.
+-->
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="../index.html" class="brand"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+      <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+      <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <div class="has-menu">
+          <a href="../index.html#calculadoras" class="active">Calculadoras &#9662;</a>
+          <div class="dropdown">
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+          </div>
+        </div>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="section section-tight">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#calculadoras">Calculadoras</a> &rsaquo; Calculadora de grasa corporal</p>
+      <div class="tool-head">
+        <h1>Calculadora de grasa corporal</h1>
+        <p class="lede">Estimación por el método de la Marina de EE. UU. a partir de tus circunferencias corporales.</p>
+      </div>
+      <div class="tool-layout">
+        <div>
+          
+          <h2>El método de la Marina de EE. UU.</h2>
+          <p>Esta calculadora usa el método circunferencial de la Marina de los Estados Unidos, que estima
+          el porcentaje de grasa corporal a partir de tu altura y las circunferencias de cuello, cintura
+          (y cadera, en el caso de las mujeres). Es una técnica de campo, no tan precisa como un DEXA o una
+          hidrodensitometría, pero razonablemente útil y repetible para seguir tu progreso en casa.</p>
+          <p>Para que el resultado sea comparable a lo largo del tiempo, mide siempre en las mismas
+          condiciones: por la mañana, en ayunas y con una cinta métrica flexible sin apretar.</p>
+
+          <div class="ad-slot">Espacio reservado para anuncio (se activará tras la aprobación de AdSense)</div>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq">
+    <div class="faq-item">
+      <h4>¿Qué tan preciso es este método?</h4>
+      <p>Tiene un margen de error de entre el 3 y el 4% respecto a métodos de laboratorio como el DEXA. Es más útil para ver tendencias en el tiempo que para obtener una cifra exacta.</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Cómo mido correctamente el cuello y la cintura?</h4>
+      <p>El cuello se mide justo debajo de la nuez, y la cintura a la altura del ombligo, sin meter tripa ni apretar la cinta. La cadera se mide en el punto más ancho de los glúteos.</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Qué porcentaje de grasa es saludable?</h4>
+      <p>Los rangos varían con la edad y el sexo, pero orientativamente: en hombres, 10-20% se considera saludable; en mujeres, 18-28%. Consulta con un profesional para valorar tu caso concreto.</p>
+    </div>
+  </div>
+          <h2>Calculadoras relacionadas</h2>
+          <div class="related-strip"><a class="pill" href="imc.html">Calculadora de IMC</a><a class="pill" href="deficit-calorico.html">Déficit calórico</a></div>
+        </div>
+        <div class="tool-panel">
+          
+          <div class="field">
+            <label>Sexo</label>
+            <div class="seg" id="sexoG">
+              <button type="button" class="active" data-v="h">Hombre</button>
+              <button type="button" data-v="m">Mujer</button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="alturaG">Altura (cm)</label>
+            <input type="number" id="alturaG" min="120" max="230" placeholder="Ej. 175">
+          </div>
+          <div class="two-col">
+            <div class="field">
+              <label for="cuello">Cuello (cm)</label>
+              <input type="number" id="cuello" min="20" max="70" placeholder="Ej. 38">
+            </div>
+            <div class="field">
+              <label for="cintura">Cintura (cm)</label>
+              <input type="number" id="cintura" min="40" max="200" placeholder="Ej. 85">
+            </div>
+          </div>
+          <div class="field" id="campoCadera" style="display:none">
+            <label for="cadera">Cadera (cm)</label>
+            <input type="number" id="cadera" min="50" max="200" placeholder="Ej. 98">
+          </div>
+          <button class="btn btn-accent btn-block" onclick="calcularGrasa()">Calcular % de grasa</button>
+
+          <div class="result-box" id="resG">
+            <div class="label">Grasa corporal estimada</div>
+            <div class="big" id="valorGrasa">--</div>
+            <div class="sub" id="categoriaGrasa">--</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand" style="color:#fff"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+        <p>Calculadoras claras y artículos revisados sobre salud, nutrición y entrenamiento, para que entiendas tus números, no solo los veas.</p>
+      </div>
+      <div>
+        <h4>Calculadoras</h4>
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+      </div>
+      <div>
+        <h4>Recursos</h4>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+        <a href="../aviso-medico.html">Aviso médico</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="../privacidad.html">Política de privacidad</a>
+        <a href="../terminos.html">Términos de uso</a>
+        <a href="../cookies.html">Política de cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="y"></span> FormaCalc. Todos los derechos reservados.</span>
+      <span>Contenido con fines informativos. No sustituye el consejo médico profesional.</span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+<script src="../js/main.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('#sexoG button').forEach(function(b){
+    b.addEventListener('click', function(){
+      document.querySelectorAll('#sexoG button').forEach(function(x){x.classList.remove('active');});
+      b.classList.add('active');
+      document.getElementById('campoCadera').style.display = (b.dataset.v === 'm') ? 'block' : 'none';
+    });
+  });
+});
+function calcularGrasa(){
+  var sexo = document.querySelector('#sexoG button.active').dataset.v;
+  var altura = parseFloat(document.getElementById('alturaG').value);
+  var cuello = parseFloat(document.getElementById('cuello').value);
+  var cintura = parseFloat(document.getElementById('cintura').value);
+  var cadera = parseFloat(document.getElementById('cadera').value);
+  if(!altura || !cuello || !cintura){ alert('Completa altura, cuello y cintura.'); return; }
+  var bf;
+  if(sexo === 'h'){
+    bf = 495 / (1.0324 - 0.19077*Math.log10(cintura-cuello) + 0.15456*Math.log10(altura)) - 450;
+  } else {
+    if(!cadera){ alert('Introduce también la cadera.'); return; }
+    bf = 495 / (1.29579 - 0.35004*Math.log10(cintura+cadera-cuello) + 0.22100*Math.log10(altura)) - 450;
+  }
+  document.getElementById('valorGrasa').textContent = fmt(bf,1) + ' %';
+  var cat;
+  if(sexo === 'h'){
+    cat = bf < 6 ? 'Muy baja (nivel atlético extremo)' : bf < 14 ? 'Atlético' : bf < 18 ? 'En forma' : bf < 25 ? 'Aceptable' : 'Alta';
+  } else {
+    cat = bf < 14 ? 'Muy baja (nivel atlético extremo)' : bf < 21 ? 'Atlético' : bf < 25 ? 'En forma' : bf < 32 ? 'Aceptable' : 'Alta';
+  }
+  document.getElementById('categoriaGrasa').textContent = 'Categoría orientativa: ' + cat;
+  document.getElementById('resG').classList.add('show');
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de déficit calórico | FormaCalc</title>
+<meta name="description" content="Calcula tus calorías diarias objetivo para perder grasa a un ritmo sostenible según tu gasto calórico y el ritmo de pérdida deseado.">
+<link rel="canonical" href="https://calculadoradegrasa.com/calculadoras/deficit-calorico.html">
+<meta property="og:title" content="Calculadora de déficit calórico | FormaCalc">
+<meta property="og:description" content="Calcula tus calorías diarias objetivo para perder grasa a un ritmo sostenible según tu gasto calórico y el ritmo de pérdida deseado.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<!--
+  Google AdSense:
+  Una vez tengas tu cuenta aprobada, añade aquí tu snippet oficial, p. ej.:
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  No lo incluyas antes de tener el ID real: un client-id de ejemplo puede generar
+  errores de "código no válido" en la revisión.
+-->
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="../index.html" class="brand"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+      <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+      <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <div class="has-menu">
+          <a href="../index.html#calculadoras" class="active">Calculadoras &#9662;</a>
+          <div class="dropdown">
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+          </div>
+        </div>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="section section-tight">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Inicio</a> &rsaquo; <a href="../index.html#calculadoras">Calculadoras</a> &rsaquo; Calculadora de déficit calórico</p>
+      <div class="tool-head">
+        <h1>Calculadora de déficit calórico</h1>
+        <p class="lede">Define un déficit sostenible a partir de tu gasto calórico y el ritmo de pérdida que buscas.</p>
+      </div>
+      <div class="tool-layout">
+        <div>
+          
+          <h2>Cómo funciona un déficit calórico</h2>
+          <p>Perder grasa corporal requiere consumir, de media, menos energía de la que gastas: eso es el
+          déficit calórico. Un kilo de grasa equivale aproximadamente a 7.700 kcal, así que un déficit diario
+          de 500 kcal se traduce en torno a 0,5 kg de pérdida por semana.</p>
+          <p>Los déficits muy agresivos (más de 1 kg/semana para la mayoría de personas) aumentan el riesgo
+          de perder masa muscular, sentir fatiga constante y abandonar el proceso. Un ritmo moderado es más
+          sostenible y más fácil de mantener a largo plazo.</p>
+
+          <div class="ad-slot">Espacio reservado para anuncio (se activará tras la aprobación de AdSense)</div>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq">
+    <div class="faq-item">
+      <h4>¿Cuál es el déficit calórico "seguro"?</h4>
+      <p>Como referencia general, no bajar de 1.200 kcal/día en mujeres ni de 1.500 kcal/día en hombres sin supervisión profesional, y evitar déficits superiores a 25-30% del TDEE de forma sostenida.</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Por qué dejo de perder peso aunque mantengo el déficit?</h4>
+      <p>Es habitual: el gasto calórico se ajusta ligeramente a la baja al perder peso, y la retención de líquidos puede enmascarar el progreso durante días o semanas (efecto meseta).</p>
+    </div>
+    <div class="faq-item">
+      <h4>¿Necesito hacer déficit todos los días de la semana?</h4>
+      <p>No necesariamente. Lo que importa es el promedio semanal: puedes tener días de mantenimiento combinados con otros de mayor déficit, siempre que el total semanal cuadre.</p>
+    </div>
+  </div>
+          <h2>Calculadoras relacionadas</h2>
+          <div class="related-strip"><a class="pill" href="calorias.html">Calculadora de calorías</a><a class="pill" href="proteina.html">Calculadora de proteína</a><a class="pill" href="gasto-calorico.html">Gasto calórico (TDEE)</a></div>
+        </div>
+        <div class="tool-panel">
+          
+          <div class="field">
+            <label for="tdeeD">Tu gasto calórico diario (TDEE)</label>
+            <input type="number" id="tdeeD" min="1000" max="6000" placeholder="Ej. 2400">
+            <div class="hint">¿No lo sabes? Calcúlalo primero en la <a href="gasto-calorico.html">calculadora de TDEE</a>.</div>
+          </div>
+          <div class="field">
+            <label for="ritmo">Ritmo de pérdida deseado</label>
+            <select id="ritmo">
+              <option value="0.25">Suave — 0,25 kg/semana</option>
+              <option value="0.5" selected>Moderado — 0,5 kg/semana</option>
+              <option value="0.75">Ambicioso — 0,75 kg/semana</option>
+              <option value="1">Agresivo — 1 kg/semana</option>
+            </select>
+          </div>
+          <button class="btn btn-accent btn-block" onclick="calcularDeficit()">Calcular déficit</button>
+
+          <div class="result-box" id="resD">
+            <div class="label">Calorías diarias objetivo</div>
+            <div class="big" id="caloriasObjetivo">--</div>
+            <div class="sub" id="detalleDeficit">--</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand" style="color:#fff"><span class="mark">FC</span>Forma<span class="accent">Calc</span></a>
+        <p>Calculadoras claras y artículos revisados sobre salud, nutrición y entrenamiento, para que entiendas tus números, no solo los veas.</p>
+      </div>
+      <div>
+        <h4>Calculadoras</h4>
+        <a href="../calculadoras/imc.html">Calculadora de IMC</a>
+        <a href="../calculadoras/calorias.html">Calculadora de calorías</a>
+        <a href="../calculadoras/proteina.html">Calculadora de proteína</a>
+        <a href="../calculadoras/gasto-calorico.html">Gasto calórico (TDEE)</a>
+        <a href="../calculadoras/1rm.html">Calculadora de 1RM</a>
+        <a href="../calculadoras/grasa-corporal.html">Porcentaje de grasa corporal</a>
+        <a href="../calculadoras/deficit-calorico.html">Déficit calórico</a>
+        <a href="../calculadoras/rutinas.html">Generador de rutinas</a>
+        <a href="../calculadoras/plan-comidas.html">Planificador de comidas</a>
+      </div>
+      <div>
+        <h4>Recursos</h4>
+        <a href="../articulos/index.html">Artículos</a>
+        <a href="../sobre-nosotros.html">Sobre nosotros</a>
+        <a href="../contacto.html">Contacto</a>
+        <a href="../aviso-medico.html">Aviso médico</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="../privacidad.html">Política de privacidad</a>
+        <a href="../terminos.html">Términos de uso</a>
+        <a href="../cookies.html">Política de cookies</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="y"></span> FormaCalc. Todos los derechos reservados.</span>
+      <span>Contenido con fines informativos. No sustituye el consejo médico profesional.</span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+<script src="../js/main.js"></script>
+
+<script>
+function calcularDeficit(){
+  var tdee = parseFloat(document.getElementById('tdeeD').value);
+  var ritmo = parseFloat(document.getElementById('ritmo').value);
+  if(!tdee){ alert('Introduce tu gasto calórico diario.'); return; }
+  var deficitDiario = (ritmo * 7700) / 7;
+  var objetivo = tdee - deficitDiario;
+  var minimo = 1200;
+  if(objetivo < minimo){
+    document.getElementById('caloriasObjetivo').textContent = fmt(minimo,0) + ' kcal (límite mínimo orientativo)';
+    document.getElementById('detalleDeficit').textContent = 'El déficit calculado (' + fmt(deficitDiario,0) + ' kcal/día) bajaría tu ingesta por debajo de un umbral prudente. Considera un ritmo más suave o consulta a un profesional.';
+  } else {
+    document.getElementById('caloriasObjetivo').textContent = fmt(objetivo,0) + ' kcal/día';
+    document.getElementById('detalleDeficit').textContent = 'Déficit diario aplicado: ' + fmt(deficitDiario,0) + ' kcal, para un ritmo de ' + ritmo + ' kg/semana aproximadamente.';
+  }
+  document.getElementById('resD').classList.add('show');
+}
+</script>
+
+</body>
+</html>
